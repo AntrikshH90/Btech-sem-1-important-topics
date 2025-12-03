@@ -23,6 +23,7 @@ This repository contains curated important questions, topics, and study material
 - **`AKTU_Important_Questions_2025.md`**: A comprehensive list of most likely questions for the upcoming exams.
 - **`EVS_Notes_2025.md`**: Ultimate Exam Notes for Environment & Ecology (Based on last 5 years).
 - **`Maths_Notes_2025.md`**: Engineering Mathematics-I Notes with Solutions (Based on last 5 years).
+- **`Electrical_Notes_2025.md`**: Basic Electrical Engineering Notes with Numericals (Based on last 5 years).
 
 ---
 
