@@ -55,3 +55,9 @@ Feel free to fork this repository and add:
 ---
 
 **Best of Luck for Your Exams! 🎓**
+
+---
+
+**Prepared by:** Antriksh  
+**Roll Number:** 21  
+**Branch:** AIML
