@@ -21,7 +21,7 @@ This repository contains curated important questions, topics, and study material
 ## 📂 Repository Contents
 
 - **`AKTU_Important_Questions_2025.md`**: A comprehensive list of most likely questions for the upcoming exams.
-- *More resources to be added soon...*
+- **`EVS_Notes_2025.md`**: Ultimate Exam Notes for Environment & Ecology (Based on last 5 years).
 
 ---
 
