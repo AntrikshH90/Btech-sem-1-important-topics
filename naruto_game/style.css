@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #ff9900; /* Naruto Orange */
+    --secondary-color: #00aaff; /* Rasengan Blue */
+    --text-color: #ffffff;
+    --bg-speed: 5s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #333;
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.5);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Double width for scrolling */
+    height: 100%;
+    background-image: url('bg.png');
+    background-size: cover; /* Or contain depending on image aspect ratio */
+    background-repeat: repeat-x;
+    animation: scrollBackground 10s linear infinite;
+}
+
+@keyframes scrollBackground {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Bangers', cursive;
+    font-size: 32px;
+    color: var(--text-color);
+    text-shadow: 2px 2px 0 #000;
+    z-index: 10;
+}
+
+.start-screen, .game-over-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    color: white;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 64px;
+    color: var(--primary-color);
+    text-shadow: 3px 3px 0 #000;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 24px;
+    font-family: 'Bangers', cursive;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #e68a00;
+}
+
+/* Game Objects */
+.naruto {
+    position: absolute;
+    bottom: 20px; /* Ground level */
+    left: 50px;
+    width: 60px;
+    height: 80px;
+    background-image: url('naruto.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 5;
+}
+
+/* Jump Animation */
+.naruto.jump {
+    animation: jump 0.6s ease-out;
+}
+
+@keyframes jump {
+    0% { bottom: 20px; }
+    50% { bottom: 150px; }
+    100% { bottom: 20px; }
+}
+
+.enemy {
+    position: absolute;
+    bottom: 20px;
+    right: -60px; /* Start off-screen */
+    width: 60px;
+    height: 80px;
+    background-image: url('enemy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 5;
+}
+
+.rasengan {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #fff, var(--secondary-color));
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--secondary-color), 0 0 30px var(--secondary-color);
+    z-index: 6;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Utility for animations */
+.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
