@@ -1,0 +1,3 @@
+Hello! This is a test file for the File Copy program.
+If you are reading this in dest.txt, the copy operation worked successfully!
+Good luck with your exams!

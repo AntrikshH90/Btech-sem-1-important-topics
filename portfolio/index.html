@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antriksh Yadav | AI/ML Specialist & CSE Student</title>
+    <meta name="description"
+        content="Portfolio of Antriksh Yadav, a B.Tech CS student specializing in AI/ML. Explore projects, certifications, and experience in AI, ML, and Digital Strategy.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&family=Raleway:wght@300;400;700;800&family=Inter:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="fluent-dark">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Antriksh<span>.</span></span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu" style="display: none;">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#materials">Study Material</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact" class="btn-primary">Connect</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-v2" id="home">
+        <div class="glow-container">
+            <div class="glow-sphere"></div>
+        </div>
+        <div class="container hero-grid">
+            <div class="hero-left animate-left">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="name">Antriksh <br>Yadav</h1>
+                <div class="social-simple">
+                    <a href="https://linkedin.com/in/antriksh-yadav-01" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AntrikshH90" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-center animate-fade">
+                <div class="profile-frame">
+                    <img src="assets/user_profile.jpg" alt="Antriksh Yadav" class="profile-img blended">
+                </div>
+            </div>
+            <div class="hero-right animate-right">
+                <span class="role-caption">Specializing in</span>
+                <h2 class="role-text">AI & ML <br><span class="accent-text">Innovator</span></h2>
+                <div class="resume-link">
+                    <a href="assets/Antriksh_Yadav_Resume.md" class="btn-text note-link">RESUME <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Global Workspace Explorer -->
+    <section class="explorer section-padding" id="explorer">
+        <div class="container">
+            <h2 class="section-title animate-up">Global <span class="gradient-text">Workspace</span> Explorer</h2>
+            <div class="explorer-controls animate-up">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="file-search" placeholder="Search any file (e.g. Matrix, Physics, Kotlin)...">
+                </div>
+                <div class="category-filters" id="category-filters">
+                    <button class="filter-pill active" data-category="all">All Files</button>
+                    <!-- Categories will be injected here -->
+                </div>
+            </div>
+
+            <div class="explorer-grid" id="explorer-grid">
+                <!-- Files will be injected here via JS -->
+                <div class="loader-simple" id="explorer-loader">
+                    <div class="spinner"></div>
+                    <p>Mapping Workspace...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Original Knowledge Base (Fallback/Highlights) -->
+    <section class="knowledge-base section-padding" id="materials">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Knowledge Base</h2>
+                <p>Curated study materials, strategies, and notes for B.Tech Exams.</p>
+                <div class="underline"></div>
+            </div>
+
+            <div class="kb-grid">
+                <!-- EVS -->
+                <div class="kb-card mica-effect animate-up">
+                    <div class="kb-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>EVS (Environment)</h3>
+                    <ul class="kb-links">
+                        <li><a href="../exam_preparation/EVS_Notes_2025.md" class="note-link"><i
+                                    class="far fa-file-alt"></i> Compact &
+                                Important Notes</a></li>
+                        <li><a href="../exam_preparation/EVS_60_Marks_Strategy.md" class="note-link"><i
+                                    class="fas fa-bullseye"></i> 60+
+                                Strategy Guide</a></li>
+                        <li><a href="../exam_preparation/EVS_Unit_Wise_Important_Notes_2025.md" class="note-link"><i
+                                    class="fas fa-book-open"></i> Full Unit Notes</a></li>
+                        <li><a href="../exam_preparation/AKTU_EVS_All_Years_Solved_2022_25.md" class="note-link"><i
+                                    class="fas fa-history"></i> PYQs Solved (2022-25)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Electrical (BEE) -->
+                <div class="kb-card mica-effect animate-up">
+                    <div class="kb-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Electrical Eng.</h3>
+                    <ul class="kb-links">
+                        <li><a href="../exam_preparation/Electrical_Notes_2025.md" class="note-link"><i
+                                    class="far fa-file-alt"></i> BEE
+                                Master Notes</a></li>
+                        <li><a href="../exam_preparation/Electrical_70_Marks_Strategy.md" class="note-link"><i
+                                    class="fas fa-bullseye"></i> 70/70 Strategy</a></li>
+                        <li><a href="../exam_preparation/Electrical_Sureshot_Questions_2025.md" class="note-link"><i
+                                    class="fas fa-check-double"></i> Sureshot Questions</a></li>
+                        <li><a href="../exam_preparation/BEE_Important_Questions_Solutions.md" class="note-link"><i
+                                    class="fas fa-laptop-code"></i> Solved PYQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Maths -->
+                <div class="kb-card mica-effect animate-up">
+                    <div class="kb-icon"><i class="fas fa-calculator"></i></div>
+                    <h3>Engineering Maths</h3>
+                    <ul class="kb-links">
+                        <li><a href="../exam_preparation/Maths_Notes_2025.md" class="note-link"><i
+                                    class="far fa-file-alt"></i> Formula
+                                Sheet & Notes</a></li>
+                        <li><a href="../exam_preparation/Math_60_Marks_Strategy.md" class="note-link"><i
+                                    class="fas fa-bullseye"></i>
+                                Passing to Pro Strategy</a></li>
+                        <li><a href="../exam_preparation/Math_Change_Of_Order_Solved.md" class="note-link"><i
+                                    class="fas fa-code-branch"></i> Solved Special Topics</a></li>
+                    </ul>
+                </div>
+
+                <!-- PPS -->
+                <div class="kb-card mica-effect animate-up">
+                    <div class="kb-icon"><i class="fas fa-code"></i></div>
+                    <h3>PPS (Programming)</h3>
+                    <ul class="kb-links">
+                        <li><a href="../exam_preparation/PPS_60_Marks_Strategy.md" class="note-link"><i
+                                    class="fas fa-bullseye"></i>
+                                Coding Exam Strategy</a></li>
+                        <li><a href="../exam_preparation/pps harsh antriksh 2025/PPS_Unit5_Solved_Easy.md"
+                                class="note-link"><i class="far fa-file-alt"></i> Unit 5 Solved (Files/Pointers)</a>
+                        </li>
+                        <li><a href="../exam_preparation/pps harsh antriksh 2025/Linked_List_Importance.md"
+                                class="note-link"><i class="fas fa-link"></i> Linked List Concepts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Physics -->
+                <div class="kb-card mica-effect animate-up">
+                    <div class="kb-icon"><i class="fas fa-atom"></i></div>
+                    <h3>Applied Physics</h3>
+                    <ul class="kb-links">
+                        <li><a href="../rav_physics/SUMMARY.md" class="note-link"><i class="fas fa-list"></i> Full
+                                Syllabus Summary</a>
+                        </li>
+                        <li><a href="../exam_preparation/Physics_60_Marks_Strategy.md" class="note-link"><i
+                                    class="fas fa-bullseye"></i>
+                                60+ Marks Plan</a></li>
+                        <li><a href="../rav_physics/Unit4_Fiber_Optics_Laser_Solutions.md" class="note-link"><i
+                                    class="far fa-file-alt"></i> Fiber Optics & Laser</a></li>
+                        <li><a href="../rav_physics/Complete_Physics_Solutions.md" class="note-link"><i
+                                    class="fas fa-book"></i> Full
+                                Solutions PDF Ready</a></li>
+                    </ul>
+                </div>
+
+                <!-- Strategy & Master -->
+                <div class="kb-card mica-effect animate-up">
+                    <div class="kb-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Master Strategy</h3>
+                    <ul class="kb-links">
+                        <li><a href="../exam_preparation/Master_60_Marks_Strategy.md" class="note-link"><i
+                                    class="fas fa-crown"></i>
+                                Overall Topper's Plan</a></li>
+                        <li><a href="../exam_preparation/Study_Timetable_Dec2025.md" class="note-link"><i
+                                    class="far fa-calendar-alt"></i>
+                                Dec 2025 Timetable</a></li>
+                        <li><a href="../exam_preparation/Micro_Topic_Checklist.md" class="note-link"><i
+                                    class="fas fa-clipboard-list"></i>
+                                Micro Topic Checklist</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text animate-left">
+                    <p>Hi, I'm <strong>Antriksh</strong>, a B.Tech Computer Science student specializing in Artificial
+                        Intelligence and Machine Learning at Axis Institute of Technology and Management, AKTU. I'm
+                        passionate about harnessing AI and ML to solve real-world challenges—from building predictive
+                        models to crafting generative AI solutions.</p>
+                    <p>As an <strong>IIT Guwahati Campus Ambassador</strong> and <strong>McKinsey Forward
+                            Scholar</strong>, I combine technical proficiency with a strategic mindset. I strive to lead
+                        community initiatives and build tech that feels premium and impactful.</p>
+                    <div class="education-summary">
+                        <h3>Education</h3>
+                        <div class="edu-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>B.Tech in Artificial Intelligence</h4>
+                                <p>Axis Institute of Technology & Management (AKTU)</p>
+                                <span>2025 — 2029</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats animate-right">
+                    <div class="stat-card mica-effect">
+                        <h3>12+</h3>
+                        <p>Certifications</p>
+                    </div>
+                    <div class="stat-card mica-effect">
+                        <h3>IITG</h3>
+                        <p>Ambassador</p>
+                    </div>
+                    <div class="stat-card mica-effect">
+                        <h3>Google</h3>
+                        <p>Innovator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section-padding bg-light-dark" id="experience">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content mica-effect">
+                        <span class="date">Dec 2025</span>
+                        <h3>McKinsey Forward Scholar</h3>
+                        <h4>McKinsey & Company</h4>
+                        <p>Selected for the prestigious Forward Program, mastering leadership, strategic
+                            problem-solving, and adaptability.</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content mica-effect">
+                        <span class="date">Oct 2025</span>
+                        <h3>Campus Ambassador</h3>
+                        <h4>IIT Guwahati (via Team Unstop)</h4>
+                        <p>Leading, inspiring, and growing the developer community as a student ambassador for IIT
+                            Guwahati.</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content mica-effect">
+                        <span class="date">Sep 2025 - Dec 2025</span>
+                        <h3>Student Ambassador</h3>
+                        <h4>LetsUpgrade EdTech Pvt Ltd</h4>
+                        <p>Actively promoting educational platforms and engaging in activities designed to enhance
+                            technical knowledge sharing.</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content mica-effect">
+                        <span class="date">Present</span>
+                        <h3>Member</h3>
+                        <h4>Google Developer Group (GDG)</h4>
+                        <p>Participating in tech deep dives, workshops (including Sarajevo Generative AI Mastery), and
+                            networking with the best devs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications section-padding" id="certifications">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Verified Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card mica-effect animate-scale">
+                    <div class="cert-icon g-cloud"><i class="fab fa-google"></i></div>
+                    <h3>Google Cloud Innovator</h3>
+                    <p>Official Member (2025)</p>
+                </div>
+                <div class="cert-card mica-effect animate-scale">
+                    <div class="cert-icon mckinsey"><i class="fas fa-forward"></i></div>
+                    <h3>McKinsey Forward</h3>
+                    <p>Leadership & Strategy</p>
+                </div>
+                <div class="cert-card mica-effect animate-scale">
+                    <div class="cert-icon adobe"><i class="fab fa-adobe"></i></div>
+                    <h3>Design & AI</h3>
+                    <p>Adobe Certified</p>
+                </div>
+                <div class="cert-card mica-effect animate-scale">
+                    <div class="cert-icon nvidia"><i class="fas fa-microchip"></i></div>
+                    <h3>NVIDIA Community</h3>
+                    <p>AI/ML Member</p>
+                </div>
+                <div class="cert-card mica-effect animate-scale">
+                    <div class="cert-icon google"><i class="fab fa-google"></i></div>
+                    <h3>Gen AI Mastery</h3>
+                    <p>Google Cloud Training</p>
+                </div>
+                <div class="cert-card mica-effect animate-scale">
+                    <div class="cert-icon hp"><i class="fas fa-database"></i></div>
+                    <h3>Data Science</h3>
+                    <p>HP LIFE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-card mica-effect">
+                <div class="contact-info">
+                    <h2>Let's Collaborate</h2>
+                    <p>I'm always looking for opportunities to apply my AI/ML skills in innovative environments like
+                        Microsoft. Let's discuss how I can contribute to your team!</p>
+                    <div class="social-links">
+                        <a href="mailto:antrikshyadav97@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com/in/antriksh-yadav-01" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/AntrikshH90" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-fluent">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Note Viewer Modal -->
+    <div id="note-modal" class="modal">
+        <div class="modal-content mica-effect">
+            <div class="modal-header">
+                <h3 id="modal-title">Note Viewer</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <div class="loader-spinner"></div>
+                <div id="note-content"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Antriksh Yadav. Designed for Innovation.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,65 +1,93 @@
-# 📚 B.Tech 1st Semester - Important Topics & Questions (AKTU)
-
-Welcome to the ultimate preparation guide for **Dr. A.P.J. Abdul Kalam Technical University (AKTU)** B.Tech 1st Semester exams (2025).
-
-This repository contains curated important questions, topics, and study material for the core subjects of the first year.
-
----
-
-## 🎯 Subjects Covered
-
-| Subject Code | Subject Name | Key Focus Areas |
-|:------------:|:-------------|:----------------|
-| **BAS-103** | Engineering Mathematics-I | Matrices, Calculus, Vector Calculus |
-| **BAS-101** | Engineering Physics | Relativistic Mechanics, Quantum Mechanics, Optics |
-| **BEE-101** | Basic Electrical Engineering | DC/AC Circuits, Transformers, Machines |
-| **BCS-101** | Programming for Problem Solving | C Programming, Pointers, File Handling |
-| **BAS-104** | Environment & Ecology | Ecosystem, Pollution, Biodiversity |
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=Antriksh%20Yadav&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" />
+  
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=25&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=AI+%26+ML+Specialist;IIT+Guwahati+Ambassador;McKinsey+Forward+Scholar;Google+Cloud+Innovator" />
+</div>
 
 ---
 
-## 📂 Repository Contents
+### 🚀 About Me
+I am a first-year BTech student specializing in **Artificial Intelligence and Machine Learning (AIML)** at Axis Institute of Technology and Management (AKTU). I have a passion for harnessing AI and ML to solve real-world challenges and create impactful solutions that blend technology with creativity.
 
-- **`AKTU_Important_Questions_2025.md`**: A comprehensive list of most likely questions for the upcoming exams.
-- **`EVS_Notes_2025.md`**: Ultimate Exam Notes for Environment & Ecology (Based on last 5 years).
-- **`Maths_Notes_2025.md`**: Engineering Mathematics-I Notes with Solutions (Based on last 5 years).
-- **`Electrical_Notes_2025.md`**: Basic Electrical Engineering Notes with Numericals (Based on last 5 years).
-
----
-
-## 🚀 How to Use This Guide
-
-1.  **Review the Topics**: Go through the `AKTU_Important_Questions_2025.md` file.
-2.  **Prioritize**: Focus on the high-weightage units mentioned (like Matrices in Math, Quantum Mechanics in Physics).
-3.  **Practice**:
-    - Solve the numerical problems for Math and Electrical.
-    - Write and run the C programs for PPS.
-    - Draw diagrams for Physics and EVS.
+- 🧑‍💻 **Programming:** Proficient in Python, C, and C++.
+- 🏛️ **Leadership:** Campus Ambassador at **IIT Guwahati** (Campus Ambassador).
+- 🎓 **Research:** Exploring Generative AI, Predictive Modeling, and Data Analytics.
+- 🌱 **Growth:** McKinsey Forward Scholar focusing on strategic problem-solving.
 
 ---
 
-## 💡 Exam Tips for AKTU Students
+### 🏆 Featured Achievements
+<details open>
+<summary><b>Click to View My Milestones</b></summary>
+<br/>
 
-- **Presentation Matters**: Write clear answers with headings and bullet points.
-- **Diagrams**: Always draw neat diagrams for Physics, Electrical, and EVS questions.
-- **Formulas**: Box your final answers and important formulas.
-- **Time Management**: Don't get stuck on one question. Move on and come back later.
-
----
-
-## 🤝 Contribution
-
-Feel free to fork this repository and add:
-- Previous year question papers
-- Your own notes
-- Solved assignments
+| Category | Achievement |
+| :--- | :--- |
+| **Education** | B.Tech in AI & ML @ AKTU (2025-2029) |
+| **Leadership** | Campus Ambassador @ **IIT Guwahati** |
+| **Scholarship** | **McKinsey Forward** Program Scholar |
+| **Tech Badges** | Google Cloud Innovator, NVIDIA Community Member |
+| **Industry** | Data Science & Analytics (HP), Digital Marketing (Adobe) |
+</details>
 
 ---
 
-**Best of Luck for Your Exams! 🎓**
+### 🛠️ Tech Stack & Skills
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=py,c,cpp,mysql,github,vscode,googlecloud,adobe,figma" />
+</div>
 
 ---
 
-**Prepared by:** Antriksh  
-**Roll Number:** 21  
-**Branch:** AIML
+### 📊 Performance & Trophies
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=antrikshh90&theme=radical&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+</div>
+
+<br/>
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api?username=antrikshh90&show_icons=true&theme=radical&rank_icon=github&count_private=true&hide_border=true" alt="Main Stats" />
+      </td>
+      <td>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=antrikshh90&theme=radical&hide_border=true" alt="GitHub Streak" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=antrikshh90&layout=compact&theme=radical&hide_border=true" alt="Top Langs" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=antrikshh90&theme=radical&hide_border=true" width="100%" />
+</div>
+
+---
+
+### 🌍 Let's Connect
+<div align="center">
+  <a href="https://linkedin.com/in/antriksh97">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://g.dev/Antriksh97">
+    <img src="https://img.shields.io/badge/Google_Developer-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+  </a>
+  <a href="mailto:antrikshyadav97@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://profile-counter.glitch.me/antrikshh90/count.svg" alt="Visitors" />
+</div>

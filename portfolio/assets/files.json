@@ -1,0 +1,46 @@
+{
+    "categories": [
+        {
+            "name": "Engineering Notes",
+            "icon": "fas fa-book",
+            "files": [
+                {"name": "Physics Unit 2 Notes", "path": "../exam_preparation/Physics_Unit2_Notes_2025.md", "type": "md"},
+                {"name": "BEE Master Notes", "path": "../exam_preparation/Electrical_Notes_2025.md", "type": "md"},
+                {"name": "EVS Unit Wise Notes", "path": "../exam_preparation/EVS_Unit_Wise_Important_Notes_2025.md", "type": "md"},
+                {"name": "Maths Formula Sheet", "path": "../exam_preparation/Maths_Notes_2025.md", "type": "md"},
+                {"name": "PPS Unit 5 Solved", "path": "../exam_preparation/pps harsh antriksh 2025/PPS_Unit5_Solved_Easy.md", "type": "md"}
+            ]
+        },
+        {
+            "name": "Coding Lab (C)",
+            "icon": "fas fa-code",
+            "files": [
+                {"name": "Matrix Multiplication", "path": "../exam_preparation/pps harsh antriksh 2025/01_matrix_multiplication.c", "type": "c"},
+                {"name": "Recursion Factorial", "path": "../exam_preparation/pps harsh antriksh 2025/03_recursion_factorial.c", "type": "c"},
+                {"name": "Structure of C Program", "path": "../exam_preparation/pps harsh antriksh 2025/Structure_of_C_Program.md", "type": "md"},
+                {"name": "Storage Classes 7 Marks", "path": "../exam_preparation/pps harsh antriksh 2025/Storage_Classes_7Marks.md", "type": "md"},
+                {"name": "Linked List Concepts", "path": "../exam_preparation/pps harsh antriksh 2025/Linked_List_Importance.md", "type": "md"}
+            ]
+        },
+        {
+            "name": "Exam Strategies",
+            "icon": "fas fa-bullseye",
+            "files": [
+                {"name": "PPS 60 Marks Strategy", "path": "../exam_preparation/PPS_60_Marks_Strategy.md", "type": "md"},
+                {"name": "Electrical 70/70 Strategy", "path": "../exam_preparation/Electrical_70_Marks_Strategy.md", "type": "md"},
+                {"name": "Math Strategy", "path": "../exam_preparation/Math_60_Marks_Strategy.md", "type": "md"},
+                {"name": "Physics 60+ Plan", "path": "../exam_preparation/Physics_60_Marks_Strategy.md", "type": "md"},
+                {"name": "EVS 60+ Strategy", "path": "../exam_preparation/EVS_60_Marks_Strategy.md", "type": "md"}
+            ]
+        },
+        {
+            "name": "Major Projects",
+            "icon": "fas fa-project-diagram",
+            "files": [
+                {"name": "Phone Silencer App", "path": "../PhoneSilencerApp/README.md", "type": "md"},
+                {"name": "Naruto Game", "path": "../naruto_game/index.html", "type": "html"},
+                {"name": "Portfolio Source", "path": "index.html", "type": "html"}
+            ]
+        }
+    ]
+}
