@@ -1,0 +1,48 @@
+{
+    "name": "B.Tech Semester 1 Full Environment",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {},
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "forwardPorts": [
+        8000,
+        3000,
+        8001,
+        3001,
+        11434
+    ],
+    "portsAttributes": {
+        "8000": {
+            "label": "AI Excel Backend",
+            "onAutoForward": "notify"
+        },
+        "3000": {
+            "label": "AI Excel Frontend",
+            "onAutoForward": "notify"
+        },
+        "8001": {
+            "label": "Audio Notebook Backend",
+            "onAutoForward": "notify"
+        },
+        "3001": {
+            "label": "Audio Notebook Frontend",
+            "onAutoForward": "notify"
+        },
+        "11434": {
+            "label": "Ollama Service",
+            "onAutoForward": "silent"
+        }
+    },
+    "postCreateCommand": "bash setup_codespace.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ritwickdey.LiveServer",
+                "esbenp.prettier-vscode"
+            ]
+        }
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Audio Notebook</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar for Sources -->
+        <aside class="sidebar glass">
+            <div class="logo">
+                <h2>Tricher<span>Clone</span></h2>
+            </div>
+
+            <div class="upload-area" id="drop-zone">
+                <input type="file" id="file-input" accept=".pdf,.txt,.md" hidden>
+                <div class="upload-btn" onclick="document.getElementById('file-input').click()">
+                    <span>+ Upload Document</span>
+                </div>
+            </div>
+
+            <div class="sources-list" id="sources-list">
+                <h3>Sources</h3>
+                <!-- List items will go here -->
+                <div class="empty-state">No documents loaded</div>
+            </div>
+
+            <div class="status-indicator">
+                <span class="dot offline"></span> <span id="status-text">System Offline</span>
+            </div>
+        </aside>
+
+        <!-- Main Content (Chat/Voice) -->
+        <main class="main-content">
+            <div class="chat-history" id="chat-history">
+                <!-- Chat messages appear here -->
+                <div class="welcome-message">
+                    <h1>Ready to Learn?</h1>
+                    <p>Upload a PDF and tap the Mic to ask questions hands-free.</p>
+                </div>
+            </div>
+
+            <!-- Voice Interaction Area -->
+            <div class="voice-controls">
+                <div class="mic-button-container">
+                    <button id="mic-btn" class="mic-btn">
+                        <svg viewBox="0 0 24 24" fill="none" class="mic-icon">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" fill="currentColor" />
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 19v4M8 23h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <div class="pulse-ring"></div>
+                    </button>
+                    <p id="listening-text" class="hidden">Listening...</p>
+
+                    <div class="controls-row" style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                        <input type="checkbox" id="loop-mode" class="loop-checkbox">
+                        <label for="loop-mode"
+                            style="color: var(--text-secondary); font-size: 0.9rem; cursor: pointer;">Hands-Free
+                            Loop</label>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

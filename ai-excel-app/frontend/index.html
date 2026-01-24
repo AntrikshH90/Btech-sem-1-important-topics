@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Excel - Handwritten to Sheet</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#0f172a] text-white min-h-screen font-['Inter'] selection:bg-blue-500/30">
+    <!-- Background Glows -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div
+            class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 blur-[120px] rounded-full animate-pulse">
+        </div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/20 blur-[120px] rounded-full animate-pulse"
+            style="animation-delay: 2s"></div>
+    </div>
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="flex items-center gap-2">
+            <div
+                class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
+                <i class="fas fa-file-excel text-xl"></i>
+            </div>
+            <span class="text-2xl font-bold font-['Outfit'] tracking-tight">AI<span
+                    class="text-blue-500">Excel</span></span>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="text-sm text-gray-400 bg-gray-800/50 px-3 py-1 rounded-full border border-gray-700/50">v1.0
+                Beta</span>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-12">
+            <h1
+                class="text-5xl font-extrabold font-['Outfit'] mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400">
+                Handwriting to Excel <br>with <span class="text-blue-500">Zero Effort.</span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+                Upload your handwritten tables or documents. Our AI extracts data perfectly into Excel files based on
+                your instructions.
+            </p>
+        </header>
+
+        <!-- Upload Card -->
+        <div class="glass-card p-1 items-center justify-center mb-12">
+            <div
+                class="bg-[#1e293b]/50 rounded-[1.25rem] p-8 md:p-12 border border-white/5 shadow-2xl relative overflow-hidden group">
+                <!-- Dropzone -->
+                <div id="dropzone"
+                    class="border-2 border-dashed border-gray-700 rounded-xl p-10 text-center transition-all duration-300 hover:border-blue-500 hover:bg-blue-500/5 cursor-pointer flex flex-col items-center">
+                    <input type="file" id="fileInput" class="hidden" accept="image/*">
+                    <div
+                        class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mb-4 transition-transform group-hover:scale-110">
+                        <i class="fas fa-cloud-upload-alt text-3xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Click or Drag Image</h3>
+                    <p class="text-gray-400 text-sm">PNG, JPG or JPEG (Max 10MB)</p>
+                </div>
+
+                <!-- Preview Area (Hidden by default) -->
+                <div id="previewContainer" class="mt-8 hidden">
+                    <div class="relative bg-black/40 rounded-lg p-2 mb-6">
+                        <img id="imagePreview" src="" alt="Preview" class="max-h-[300px] mx-auto rounded">
+                        <button id="removeImage"
+                            class="absolute top-4 right-4 w-8 h-8 bg-red-500/80 rounded-full flex items-center justify-center hover:bg-red-600">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Special Instructions
+                            (Optional)</label>
+                        <textarea id="instructions" rows="2"
+                            class="w-full bg-[#0f172a]/50 border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500 transition-colors placeholder:text-gray-600"
+                            placeholder="e.g., 'Add a total row', 'Keep dates in YYYY-MM-DD format'"></textarea>
+                    </div>
+
+                    <button id="generateBtn"
+                        class="w-full py-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 rounded-xl font-bold text-lg shadow-lg shadow-blue-600/20 transition-all active:scale-95 flex items-center justify-center gap-3">
+                        <i class="fas fa-magic"></i>
+                        Generate Excel
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Processing Loader (Hidden) -->
+        <div id="loader" class="hidden text-center py-12">
+            <div
+                class="inline-block w-12 h-12 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin mb-4">
+            </div>
+            <p class="text-blue-500 font-medium animate-pulse">AI is reading your handwriting...</p>
+            <p class="text-gray-500 text-sm mt-2">This may take 10-20 seconds</p>
+        </div>
+
+        <!-- Result Card (Hidden) -->
+        <div id="resultCard" class="hidden animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <div class="bg-emerald-500/10 border border-emerald-500/20 rounded-2xl p-8 mb-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/20 text-2xl">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold font-['Outfit']">Excel Generated!</h3>
+                        <p class="text-gray-400">Successfully extracted table data from your image.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4">
+                    <a id="downloadBtn" href="#"
+                        class="flex-1 py-4 bg-emerald-600 hover:bg-emerald-500 rounded-xl font-bold text-center transition-all flex items-center justify-center gap-3">
+                        <i class="fas fa-download"></i>
+                        Download .xlsx
+                    </a>
+                    <button id="resetBtn"
+                        class="px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-xl font-bold transition-all">
+                        Process Another
+                    </button>
+                </div>
+            </div>
+
+            <!-- Data Preview -->
+            <div class="bg-[#1e293b]/30 rounded-2xl p-6 border border-white/5 overflow-hidden">
+                <h4 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                    <i class="fas fa-eye text-blue-500"></i>
+                    Extracted Data Preview
+                </h4>
+                <div class="overflow-x-auto">
+                    <table id="previewTable" class="w-full text-left text-sm text-gray-400">
+                        <!-- Populated by JS -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-12 text-gray-500 text-sm border-t border-white/5">
+        <p>&copy; 2026 AI Excel App. Powered by Gemini 1.5 Flash.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

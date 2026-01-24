@@ -89,6 +89,21 @@
 *   **Discharging:** Lead sulphate ($PbSO_4$) forms on both plates; acid density drops.
 *   **Charging:** Plates convert back to $PbO_2$ and $Pb$; acid density rises.
 
+### **6. Construction of Underground Cable**
+*   **Mnemonic:** **CIMBAS** (Core, Insulation, Metallic Sheath, Bedding, Armouring, Serving).
+*   **Key:** Draw the layered diagram!
+*   **Link:** [See Detailed Notes & Diagram](Cable_Construction.md)
+
+### **7. Bus Bar Systems**
+*   **Definition:** A rigid metallic strip (Copper/Aluminum) for high current distribution.
+*   **Types:** Single (Simple), Double (Reliable), Ring (Redundant).
+*   **Link:** [See Bus Bar Notes](Bus_Bar_Notes.md)
+
+### **8. Types of Wires and Cables**
+*   **Wires:** VIR (Obsolete), PVC (Common), CTS, Lead Sheathed.
+*   **Cables (Voltage):** LT (<1kV), HT (11kV), ST (33kV), EHT (66kV).
+*   **Link:** [See Classification Notes](Types_of_Cables_Wires.md)
+
 ---
 
 ## 🎯 EXAM HACKS

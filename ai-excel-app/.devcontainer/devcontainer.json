@@ -1,0 +1,30 @@
+{
+    "name": "AI Excel App Dev Environment",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {}
+    },
+    "forwardPorts": [
+        8000,
+        3000
+    ],
+    "portsAttributes": {
+        "8000": {
+            "label": "Backend (API)",
+            "onAutoForward": "notify"
+        },
+        "3000": {
+            "label": "Frontend (UI)",
+            "onAutoForward": "openBrowser"
+        }
+    },
+    "postCreateCommand": "pip install -r backend/requirements.txt",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    }
+}
